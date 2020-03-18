@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
 import * as serviceWorker from './serviceWorker';
+
 import Clock from './components/Clock'
 import Toggle from './components/Toggle'
 import NumberList from './components/NumberList'
 import NameForm from './components/NameForm'
 import Calculator from './components/Calculator'
-// import NumberList from './components/NumberList'
+import SignUpDialog from './components/SignUpDialog'
 
 
 // ReactDOM.render(<App />, document.getElementById('root'));
@@ -21,6 +22,7 @@ ReactDOM.render(
     <NameForm />
     <br/>
     <Calculator />
+    <SignUpDialog />
   </div>,
   document.getElementById('root')
 );
