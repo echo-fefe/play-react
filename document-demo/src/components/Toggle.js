@@ -1,3 +1,6 @@
+/**
+ * 事件处理、条件渲染
+ */
 import React from 'react'
 
 // 使用 React 时，一般不需要使用 addEventListener 为已创建的 DOM 元素添加监听器

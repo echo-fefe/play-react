@@ -1,3 +1,6 @@
+/**
+ * 状态提升
+ */
 import React from 'react';
 import TemperatureInput from './TemperatureInput'
 

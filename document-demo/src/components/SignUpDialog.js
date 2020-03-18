@@ -1,3 +1,6 @@
+/**
+ * 组合 & 继承
+ */
 import React from 'react';
 
 function FancyBorder(props) {
