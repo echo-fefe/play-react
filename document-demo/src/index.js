@@ -1,29 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import './index.css';
 // import App from './App';
 import * as serviceWorker from './serviceWorker';
-
-import Clock from './components/Clock'
-import Toggle from './components/Toggle'
-import NumberList from './components/NumberList'
-import NameForm from './components/NameForm'
-import Calculator from './components/Calculator'
-import SignUpDialog from './components/SignUpDialog'
-
+import Main from './modules/Main/index'
+import Advanced from './modules/Advanced/index'
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 
+const BasicExample = () => (
+  <Router>
+    <div>
+      <ul>
+        <li><Link to="/">Main</Link></li>
+        <li><Link to="/advanced">Advanced</Link></li>
+      </ul>
+
+      <hr />
+
+      <Route exact path="/" component={Main} />
+      <Route path="/advanced" component={Advanced} />
+    </div>
+  </Router>
+)
+
 ReactDOM.render(
-  <div>
-    <Clock />
-    <Toggle />
-    <NumberList numbers={[1,2,3,4]} />
-    <NameForm />
-    <br/>
-    <Calculator />
-    <SignUpDialog />
-  </div>,
+  <BasicExample />,
   document.getElementById('root')
 );
 

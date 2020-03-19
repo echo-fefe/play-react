@@ -20,7 +20,7 @@ class NameForm extends React.Component {
   }
 
   handleInputChange = (event) => {
-    // event.target 就是 <input type="text" value="xxxxxxxxx">...</input>
+    // TODO: event.target 就是 <input type="text" value="xxxxxxxxx">...</input>
     this.setState({
       [event.target.name]: event.target.value
     })

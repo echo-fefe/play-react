@@ -9,9 +9,11 @@ class Clock extends React.Component {
     this.state = {
       date: new Date()
     }
+    this.timeID = null
   }
 
-  componentDidMount() { // 组件已经被渲染到DOM中后运行
+  // TODO: 组件已经被渲染到DOM中后运行
+  componentDidMount() {
     this.timeID = setInterval(
       () => this.tick(),
       1000

@@ -21,7 +21,7 @@ class TemperatureInput extends React.Component {
     const temperature = this.props.temperature
     const scale = this.props.scale
     return (
-      // <fieldset>通常用来对表单中的控制元素进行分组(也包括 label 元素)
+      // TODO: <fieldset>通常用来对表单中的控制元素进行分组(也包括 label 元素)
       <fieldset>
         {/* 代表一个用于表示它的父元素<fieldset>的内容的标题, 并且<legend>作为其第一个子元素 */}
         <legend>Enter temperature in {scaleNames[scale]}</legend>

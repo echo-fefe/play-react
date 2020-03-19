@@ -19,7 +19,7 @@ function toFahrenheit(celsius) {
   return (celsius * 9 / 5) + 32
 }
 
-// 这个设计思想要好好学习！！！
+// TODO: 这个设计思想要好好学习！！！
 function tryConvert(temperature, convert) {
   const input = parseFloat(temperature)
   // temperature值无效时，返回 ''
