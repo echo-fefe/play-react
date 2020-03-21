@@ -12,8 +12,10 @@ import ErrorBoundary from './ErrorBoundary'
 
 // TODO fallback 属性接受任何在组件加载过程中你想展示的 React 元素
 
-const ThemeComponent = React.lazy(() => import('./ThemeComponent'))
+const ThemeComponent = React.lazy(() => import('./theme-context-demo/ThemeComponent'))
 const MyComponent = React.lazy(() => import('./MyComponent'))
+const ThemeApp = React.lazy(() => import('./theme-context-demo/App'))
+
 
 // 如果模块加载失败（如网络问题），它会触发一个错误。
 // 你可以通过异常捕获边界（Error boundaries）技术来处理这些情况，以显示良好的用户体验并管理恢复事宜
@@ -23,6 +25,7 @@ const Advanced = () => (
       <section>
         <ThemeComponent />
         <MyComponent />
+        <ThemeApp />
       </section>
     </Suspense>
   </ErrorBoundary>

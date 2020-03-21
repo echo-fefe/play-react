@@ -73,14 +73,14 @@ class ThemeButton1 extends React.Component {
 // TODO 方式二：class外，可以 Class.contextType
 class ThemeButton2 extends React.Component {
   componentDidMount() {
-    let value = this.context
+    // let value = this.context
     // 在组件挂载完成后，使用 MyContext 组件的值来执行一些有副作用的操作
   }
   componentDidUpdate(prevProps, prevState) {
-    let value = this.context
+    // let value = this.context
   }
   componentWillUnmount() {
-    let value = this.context
+    // let value = this.context
   }
   render() {
     let value = this.context
