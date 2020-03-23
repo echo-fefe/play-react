@@ -15,6 +15,8 @@ import ErrorBoundary from './ErrorBoundary'
 const ThemeComponent = React.lazy(() => import('./theme-context-demo/ThemeComponent'))
 const MyComponent = React.lazy(() => import('./MyComponent'))
 const ThemeApp = React.lazy(() => import('./theme-context-demo/App'))
+const NameForm = React.lazy(() => import('./受控组件/NameForm'))
+const FileInput = React.lazy(() => import('./受控组件/FileInput'))
 
 
 // 如果模块加载失败（如网络问题），它会触发一个错误。
@@ -26,6 +28,8 @@ const Advanced = () => (
         <ThemeComponent />
         <MyComponent />
         <ThemeApp />
+        <NameForm />
+        <FileInput />
       </section>
     </Suspense>
   </ErrorBoundary>

@@ -1,5 +1,5 @@
 /**
- * 表单
+ * 表单 ,其实推荐使用 受控组件实现
  */
 import React from 'react'
 
